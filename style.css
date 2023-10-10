@@ -1,0 +1,429 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background: #ab6e5c;
+}
+
+.page {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 15px 15px 25px rgba(0, 0, 0, 0.6);
+}
+
+.container {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    overflow: hidden;
+    width: 1000px;
+}
+
+.container .img {
+    z-index: 1;
+}
+
+.wrapper {
+    display: flex;
+    width: 500px;
+    height: 670px;
+    /* border: 1px solid yellow; */
+    padding: 40px;
+    background: rgba(0, 0, 0, 0.5);
+    box-sizing: border-box;
+    /* box-shadow: 0 15px 25px rgba(0, 0, 0, 0.6); */
+    border-radius: 10px;
+}
+
+.wrapper .left {
+    transition: all 0.3s ease-in-out;
+    transform: translateX(0px);
+}
+
+.wrapper.active .left {
+    transition: all 0.3s ease-in-out;
+    transform: translateX(-500px);
+}
+
+.left {
+    width: 500px;
+    /* border: 1px solid red; */
+}
+
+.right {
+    width: 455px;
+    /* border: 1px solid red; */
+}
+
+.left .login .btn {
+    /* border: 1px solid red; */
+    height: 40px;
+    width: 300px;
+    margin: auto;
+    background-color: #f7a890;
+    border-radius: 50px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+}
+
+.left .login .btn button {
+    background-color: transparent;
+    border: none;
+}
+
+.left .login form {
+    margin-top: 20px;
+}
+
+.left .login .user-box {
+    position: relative;
+}
+
+.left .login .user-box input {
+    width: 100%;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #fff;
+    margin-bottom: 20px;
+    border: none;
+    border-bottom: 1px solid #fff;
+    outline: none;
+    background: transparent;
+    /* border: 1px solid red; */
+}
+
+.left .login .user-box label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #fff;
+    pointer-events: none;
+    transition: 0.5s;
+}
+
+.left .login form input {
+    font-size: 20px;
+    color: white;
+    border: none;
+    transition: all 0.3s;
+    position: relative;
+    display: inline-block;
+    font-size: 16px;
+    text-decoration: none;
+    overflow: hidden;
+    transition: 0.5s;
+    margin-top: 20px;
+}
+
+.left .login a:hover {
+    color: #004a56;
+    border-rgb: (126, 52, 9) 5px;
+}
+
+.left .login a span {
+    position: absolute;
+    display: block;
+}
+
+.left .login .submt {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 40px;
+    color: white;
+    /* border: 1px solid red; */
+}
+
+.left .login .submt span {
+    color: white;
+}
+
+.left .login .submt svg {
+    color: white;
+}
+
+.left .submt button {
+    width: 100%;
+    cursor: pointer;
+    font-weight: 700;
+    font-family: Helvetica, 'sans-serif';
+    transition: all 0.2s;
+    padding: 10px 20px;
+    border-radius: 100px;
+    background: #f7a890;
+    border: 1px solid transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 15px;
+}
+
+.left .submt button:hover {
+    background: #ab6e5c;
+}
+
+.left .submt button>svg {
+    width: 34px;
+    margin-left: 10px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.left .submt button:hover svg {
+    transform: translateX(5px);
+}
+
+.left .submt button:active {
+    transform: scale(0.95);
+}
+
+.left .cbox {
+    display: flex;
+    align-items: center;
+    /* border: 1px solid red; */
+}
+
+.left .cbox p {
+    position: absolute;
+    color: white;
+}
+
+.left .google {
+    margin-top: 80px;
+}
+
+.left .google .button {
+    margin-bottom: 10px;
+    width: 100%;
+    display: flex;
+    /* padding: 0.875rem 1.75rem; */
+    font-size: 1rem;
+    line-height: 0.5rem;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+    vertical-align: middle;
+    align-items: center;
+    border-radius: 0.5rem;
+    justify-content: center;
+    border: 1px solid rgba(0, 0, 0, 0.63);
+    gap: 0.5rem;
+    transition: all 0.6s ease;
+}
+
+.left .google i {
+    font-size: 1.2rem;
+}
+
+.left .button:hover {
+    transform: scale(1.02);
+}
+
+.left .logreg p {
+    color: white;
+}
+
+.left .logreg a {
+    color: #ab6e5c;
+    text-decoration: none;
+}
+
+.right .login .btn {
+    height: 40px;
+    width: 300px;
+    margin: auto;
+    background-color: rgba(242, 248, 247, 0);
+    border-radius: 50px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+}
+
+.right .login .btn button {
+    background-color: transparent;
+    border: none;
+}
+
+.right .login form {
+    margin-top: 20px;
+}
+
+.right .login .user-box {
+    position: relative;
+}
+
+.right .login .user-box input {
+    width: 100%;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #fff;
+    margin-bottom: 20px;
+    border: none;
+    border-bottom: 1px solid #fff;
+    outline: none;
+    background: transparent;
+    /* border: 1px solid red; */
+}
+
+.right .login .user-box label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #fff;
+    pointer-events: none;
+    transition: 0.5s;
+}
+
+.right .login form input {
+    font-size: 20px;
+    color: white;
+    border: none;
+    transition: all 0.3s;
+    position: relative;
+    display: inline-block;
+    font-size: 16px;
+    text-decoration: none;
+    overflow: hidden;
+    transition: 0.5s;
+    margin-top: 20px;
+}
+
+.right .login a:hover {
+    color: #ab6e5c;
+    border-radius: 5px;
+}
+
+.right .login a span {
+    position: absolute;
+    display: block;
+}
+
+.right .login .submt {
+    /* width: 500px; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 40px;
+    color: white;
+    /* border: 1px solid red; */
+}
+
+.right .login .submt span {
+    color: white;
+}
+
+.right .login .submt svg {
+    color: white;
+}
+
+.right .submt button {
+    width: 500px;
+    cursor: pointer;
+    font-weight: 700;
+    font-family: Helvetica, 'sans-serif';
+    transition: all 0.2s;
+    padding: 10px 20px;
+    border-radius: 100px;
+    background: #8eafa8;
+    border: 1px solid transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 15px;
+}
+
+.right .submt button:hover {
+    background: #ab6e5c;
+}
+
+.right .submt button>svg {
+    width: 34px;
+    margin-left: 10px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.right .submt button:hover svg {
+    transform: translateX(5px);
+}
+
+.right .submt button:active {
+    transform: scale(0.95);
+}
+
+.right .cbox {
+    display: flex;
+    align-items: center;
+    /* border: 1px solid red; */
+}
+
+.right .cbox p {
+    position: absolute;
+    color: white;
+}
+
+.right .google {
+    margin-top: 25px;
+}
+
+.right .google .button {
+    margin-bottom: 10px;
+    width: 100%;
+    display: flex;
+    /* padding: 0.875rem 1.75rem; */
+    font-size: 0.9rem;
+    line-height: 0.5rem;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+    vertical-align: middle;
+    align-items: center;
+    border-radius: 0.5rem;
+    justify-content: center;
+    border: 1px solid rgba(0, 0, 0, 0.63);
+    gap: 0.5rem;
+    transition: all 0.6s ease;
+}
+
+.right .google i {
+    font-size: 1.2rem;
+}
+
+.right .button:hover {
+    transform: scale(1.02);
+}
+
+.right .reglog p {
+    color: white;
+}
+
+.right .reglog a {
+    color: #ab6e5c;
+    text-decoration: none;
+}
+
+.right {
+    position: absolute;
+    transform: translateX(500px);
+    /* border: 1px solid red; */
+    /* display: none; */
+}
+
+.wrapper .right {
+    transition: all 0.3s ease-in-out;
+    transform: translateX(500px);
+}
+
+.wrapper.active .right {
+    transition: all 0.3s ease-in-out;
+    transform: translateX(-20px);
+}
